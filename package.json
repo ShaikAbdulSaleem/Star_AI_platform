@@ -1,0 +1,11 @@
+{
+  "name": "ai-startup-platform",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd packages/backend && npm run dev",
+    "frontend:dev": "cd packages/frontend && npm start"
+  },
+  "devDependencies": { "concurrently": "^8.2.2" },
+  "workspaces": ["packages/*"]
+}
